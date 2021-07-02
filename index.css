@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url('peakx.jpg') no-repeat center;
+  background-size: cover;
+  font-family: Sans-Serif;
+}
+.login-place {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  padding: 80px 40px 40px;
+  background: rgba(0,0,0,0.8);
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+
+.form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 135px;
+  width: 30%;
+  height: 100%;
+  background: rgba(255,255,255, 0.08);
+  transform-origin: bottom left;
+  border-radius: 10px;
+  pointer-events: none;
+}
+img {
+   position: relative;
+   top: -50px;
+   left: 42%;
+   
+   width: 50px;
+}
+h2 {
+  text-align: center;
+  position: relative;
+  top: -50px;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+.form .login-bond {
+  position: relative;
+}
+.form .login-bond input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+}
+.form .login-bond label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-family: 'Righteous', cursive;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: .3s ease-out;
+}
+.form .login-bond input:focus+label,
+.form .login-bond input:valid+label {
+  transform: translateY(-20px);
+  color: #fe3d64;
+  font-size: 1rem;
+}
+.submit_btn {
+  display: block;
+  margin-left: auto;
+  border: none;
+  outline: none;
+  background: #fe3d64;
+  font-size: 1rem;
+ font-family: 'Righteous', cursive; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submit_btn:hover {
+  color: white;
+  background-color: tomato;
+  font-size: 1.1rem;
+  transition: all 1s ease;
+}
